@@ -14,4 +14,13 @@
     <img src="drummertoy.jpg" alt=""/>
 </a>
 </body>
+<script>
+    var u = navigator.userAgent
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    if(isiOS){
+        console.log(ios);
+    }else{
+        console.log(noios);
+    }
+</script>
 </html>
