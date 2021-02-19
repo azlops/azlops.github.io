@@ -13,14 +13,16 @@
 <a href="toy_drummer.usdz" rel="ar">
     <img src="drummertoy.jpg" alt=""/>
 </a>
+    <div id="pass" style="width:200px;height:200px;"></div>    
 </body>
 <script>
     var u = navigator.userAgent
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     if(isiOS){
-        console.log(ios);
+        document.getElementById("pass").style.background='pink';
+        console.log("ios");
     }else{
-        console.log(noios);
+        console.log("noios");
     }
 </script>
 </html>
